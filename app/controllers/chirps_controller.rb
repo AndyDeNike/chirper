@@ -16,11 +16,7 @@ class ChirpsController < ApplicationController
 
   # GET /chirps/new
   def new
-<<<<<<< HEAD
     @chirp = current_user.chirps.build
-=======
-    @chirp = Chirp.new
->>>>>>> b5167da817288517e34d64aed3e68aaf3adc52e3
   end
 
   # GET /chirps/1/edit
@@ -30,11 +26,7 @@ class ChirpsController < ApplicationController
   # POST /chirps
   # POST /chirps.json
   def create
-<<<<<<< HEAD
     @chirp = current_user.chirps.build(chirp_params)
-=======
-    @chirp = Chirp.new(chirp_params)
->>>>>>> b5167da817288517e34d64aed3e68aaf3adc52e3
 
     respond_to do |format|
       if @chirp.save
