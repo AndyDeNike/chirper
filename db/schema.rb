@@ -10,13 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20200121052257) do
+=======
+ActiveRecord::Schema.define(version: 20200121044507) do
+>>>>>>> b5167da817288517e34d64aed3e68aaf3adc52e3
 
   create_table "chirps", force: :cascade do |t|
     t.text "chirp"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+<<<<<<< HEAD
     t.integer "user_id"
+=======
+>>>>>>> b5167da817288517e34d64aed3e68aaf3adc52e3
   end
 
   create_table "users", force: :cascade do |t|
