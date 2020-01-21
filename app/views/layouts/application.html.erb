@@ -12,7 +12,7 @@
   <body>
     <% if flash[:notice] %>
       <div class="notification is-primary global-notification">
-        <p class="notice"><% notice %></p>
+        <p class="notice"><%= notice %></p>
       </div>
     <% end %>
     <% if flash[:alert] %>
@@ -34,12 +34,14 @@
 
       <div id="navbarExample" class="navbar-menu">
         <div class="navbar-end">
-          <div class="field is-grouped">
-            <p class="control">
-              <%# new_chirp is the route which can be shown with rake routes %>
-              <%= link_to 'New Chirp', new_chirp_path, class: "button is-info is-inverted" %>
-            </p>
-            <p class="control">Sign Up</p>
+          <div class="navbar-item">
+            <div class="field is-grouped">
+              <p class="control">
+                <%# new_chirp is the route which can be shown with rake routes %>
+                <%= link_to 'New Chirp', new_chirp_path, class: "button is-info is-inverted" %>
+              </p>
+              <p class="control">Sign Up</p>
+            </div>
           </div>
         </div>
       </div>

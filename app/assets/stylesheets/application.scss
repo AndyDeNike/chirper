@@ -28,6 +28,10 @@
     }
 }
 
-.notifications:not(:last-child){
+.notification:not(:last-child){
     margin-bottom: 0;
+}
+
+.field.is-grouped {
+    align-items: center;
 }
