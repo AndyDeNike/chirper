@@ -1,26 +1,16 @@
 <div class="column is-half">
-<<<<<<< HEAD
     <% if user_signed_in? %>
     <article class="media box">
         <figure class=media-left>
             <p class="image is-64x64">
                 <%= gravatar_image_tag(current_user.email, size: 64, alt: current_user.name) %>
-=======
-    <article class="media box">
-        <figure class=media-left>
-            <p class="image is-64x64">
-                <img src="https://bulma.io/images/placeholders/64x64.png">
->>>>>>> b5167da817288517e34d64aed3e68aaf3adc52e3
             </p>
         </figure>
         <div class="media-content">
             <%= render 'chirps/form' %>
         </div>
     </article>
-<<<<<<< HEAD
     <% end %>
-=======
->>>>>>> b5167da817288517e34d64aed3e68aaf3adc52e3
 
 
 <% @chirps.each do | chirp | %>
@@ -28,27 +18,16 @@
         <article class="media">
             <div class="media-left">
                 <figure class="image is-64x64">
-<<<<<<< HEAD
                     <%= gravatar_image_tag(chirp.user.email, size: 64, alt: chirp.user.name) %>
-=======
-                    <img src="https://bulma.io/images/placeholders/64x64.png">
->>>>>>> b5167da817288517e34d64aed3e68aaf3adc52e3
                 </figure>
             </div>
             <div>
                 <div class="content">
-<<<<<<< HEAD
                     <strong><%= chirp.user.name  %></strong><br />
                     <small><%= chirp.user.username %></small><br />
                     <p><%= chirp.chirp %></p>
                 </div>
                 <% if user_signed_in? && current_user.id == chirp.user_id%>
-=======
-                    <strong>Andy Denike</strong><br />
-                    <small>@mefaqs</small><br />
-                    <p><%= chirp.chirp %></p>
-                </div>
->>>>>>> b5167da817288517e34d64aed3e68aaf3adc52e3
                 <nav class="level">
                     <div class="level-left is-mobile">
                         <%= link_to chirp, class: "level-item" do %>
@@ -63,10 +42,7 @@
                         <% end %>
                     </div>
                 </nav>
-<<<<<<< HEAD
                 <% end %>
-=======
->>>>>>> b5167da817288517e34d64aed3e68aaf3adc52e3
             </div>
         </article>
     </div>
